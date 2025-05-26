@@ -8,7 +8,7 @@
 *  595, 531 both armies will be pointing to the same creatures -5 
 * missing operator = -5
 * 62-72  and like should call appropriate parent  c’tor -5
-* *  if a class is a parent, the destructor should be virtual -5
+* if a class is a parent, the destructor should be virtual -5
 * 228 and like: must handle exception before leaving a c’tor; should never abruptly terminate c’tor due to an exception; otherwise, you will have a var Id or reference and no object; if another function throws an uncaught exception while called by a c’tor and the c’tor cannot handle it, the c’tor will terminate prematurely;  having a setter function that sets all member variables, handles all possible exception,   and  is called by all other  setter function, including c’tors, reduces the number of  the catch blocks needed in other functions, like c’tors -5
 * 409 what for? redundant logic that results in unnecessary function calls; function calls are computational expense; going through the same array twice instead of once is unnecessary computation expense;  why not do it in line 401; e.g. p= new MyClass(3,5,6) ; -2
 * 398 and like: should initialize all pointers to nullptr at the time of definition/allocation; this helps with debugging, DMA, and providing a strong exception guarantee -2
